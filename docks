@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="div">
+        <p class="text-wrapper">
+          Онлайн-сервис для самозанятых, ИП и ООО. Генерация документов, подсказки по регистрации и правовые советы — в
+          одном окне.
+        </p>
+        <p class="p">Создайте свой бизнес — просто и без юристов</p>
+        <div class="link"><div class="text-wrapper-2">Начать</div></div>
+        <div class="div-wrapper"><div class="text-wrapper-2">Сгенерировать документы</div></div>
+        <div class="div-2">
+          <div class="text-wrapper-3">Как работает сервис</div>
+          <div class="group">
+            <div class="rectangle"></div>
+            <div class="rectangle-2"></div>
+            <div class="rectangle-3"></div>
+          </div>
+          <p class="element-word-PDF">
+            <span class="span">1. Ответьте на 5 вопросов</span>
+            <span class="text-wrapper-4"> Уточним форму бизнеса, налоговую систему и цели. <br /></span>
+            <span class="span">2. Получите нужные документы</span>
+            <span class="text-wrapper-4"> Шаблоны в Word или PDF, готовые к подаче. <br /></span>
+            <span class="span">3. Следуйте пошаговым рекомендациям</span>
+            <span class="text-wrapper-4"> От регистрации до первых клиентов.</span>
+          </p>
+        </div>
+        <div class="div-3">
+          <div class="text-wrapper-5">Для кого это</div>
+          <div class="group-2">
+            <div class="group-wrapper">
+              <div class="group-3">
+                <div class="text-wrapper-6">Самозанятым</div>
+                <div class="text-wrapper-7">Договоры, акты, справки</div>
+              </div>
+            </div>
+            <div class="group-wrapper-2">
+              <div class="group-4">
+                <div class="text-wrapper-6">ИП</div>
+                <div class="text-wrapper-7">УСН, заявления, чек-листы</div>
+              </div>
+            </div>
+          </div>
+          <div class="group-wrapper-3">
+            <div class="group-5">
+              <div class="text-wrapper-6">ООО</div>
+              <div class="text-wrapper-7">устав, решения, протоколы, советы</div>
+            </div>
+          </div>
+        </div>
+        <div class="div-4">
+          <div class="text-wrapper-8">Преимущества</div>
+          <div class="text-wrapper-9">Почему выбирают нас:</div>
+          <div class="div-5">
+            <p class="text-wrapper-10">Готовые шаблоны документов (без ошибок)</p>
+            <div class="checkmark"><div class="group-6"></div></div>
+          </div>
+          <div class="div-6">
+            <p class="text-wrapper-10">Лёгкая анкета — вместо долгих форм</p>
+            <div class="checkmark"><div class="group-7"></div></div>
+          </div>
+          <div class="div-7">
+            <p class="text-wrapper-10">Экономия на юристах и бухгалтерах</p>
+            <div class="checkmark"><div class="group-8"></div></div>
+          </div>
+          <div class="div-8">
+            <p class="text-wrapper-10">Быстрый экспорт в PDF и DOCX</p>
+            <div class="checkmark"><div class="group-9"></div></div>
+          </div>
+          <div class="div-9">
+            <div class="text-wrapper-10">Без регистрации и звонков</div>
+            <div class="checkmark"><div class="group-10"></div></div>
+          </div>
+          <div class="link-2"><div class="text-wrapper-11">Начать</div></div>
+        </div>
+        <img class="img" src="img/rectangle-31.svg" />
+        <img class="img" src="img/rectangle-30.svg" />
+        <div class="group-11">
+          <div class="text-wrapper-12">Контакты</div>
+          <div class="text-wrapper-13">Анкета</div>
+          <div class="text-wrapper-14">Чат-бот</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
