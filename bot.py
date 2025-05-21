@@ -75,3 +75,8 @@ async def main():
 if __name__ == "__main__":
     import asyncio
     asyncio.run(main())
+
+# В bot.py
+
+async def run_bot():
+    await dp.start_polling(bot)
