@@ -1,126 +1,114 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { ElementWordPdf } from "./sections/ElementWordPdf";
-import { Frame } from "./sections/Frame";
-import { Group } from "./sections/Group";
-import "./style.css";
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusinessDoc | Документы для бизнеса</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/sf-pro-display@4.0.3/index.min.css">
 
-export const FrameScreen = () => {
-  return (
-    <div className="frame-screen" data-model-id="2:2940">
-      <div className="frame-2">
-        <p className="text-wrapper-8">
-          Онлайн-сервис для самозанятых, ИП и ООО. Генерация документов,
-          подсказки по регистрации и правовые советы — в одном окне.
-        </p>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
 
-        <p className="text-wrapper-9">
-          Создайте свой бизнес — просто и без юристов
-        </p>
+        .animated-element {
+            opacity: 0;
+            transform: translate--
+        }
+    </style>
 
-        <Link className="link" to="/u1072u1085u1082u1077u1090u1072">
-          <div className="text-wrapper-10">Начать</div>
-        </Link>
-
-        <div className="link-2">
-          <div className="text-wrapper-10">Сгенерировать документы</div>
-        </div>
-
-        <div className="frame-3">
-          <div className="text-wrapper-11">Как работает сервис</div>
-
-          <div className="group-3">
-            <div className="rectangle" />
-
-            <div className="rectangle-2" />
-
-            <div className="rectangle-3" />
-          </div>
-
-          <ElementWordPdf />
-        </div>
-
-        <div className="frame-4">
-          <div className="text-wrapper-12">Для кого это</div>
-
-          <Group />
-          <Frame />
-        </div>
-
-        <div className="frame-5">
-          <div className="text-wrapper-13">Преимущества</div>
-
-          <div className="text-wrapper-14">Почему выбирают нас:</div>
-
-          <div className="frame-6">
-            <p className="text-wrapper-15">
-              Готовые шаблоны документов (без ошибок)
-            </p>
-
-            <div className="checkmark">
-              <div className="group-4" />
+</head>
+<body>
+    <!-- Минималистичный хедер -->
+    <header class="apple-header">
+        <nav class="apple-nav">
+            <a href="#" class="apple-logo">BusinessDock</a>
+            <div class="apple-links">
+                <a href="#features">Как работает сервис</a>
+                <a href="#advantage">Для кого это</a>
+                <a href="#advantages">Преимущества</a>
+                <a href="#bot.html"> Чат-Бот</a>
             </div>
-          </div>
+        </nav>
+    </header>
 
-          <div className="frame-7">
-            <p className="text-wrapper-15">
-              Лёгкая анкета — вместо долгих форм
-            </p>
-
-            <div className="checkmark">
-              <div className="group-4" />
-            </div>
-          </div>
-
-          <div className="frame-8">
-            <p className="text-wrapper-15">Экономия на юристах и бухгалтерах</p>
-
-            <div className="checkmark">
-              <div className="group-5" />
-            </div>
-          </div>
-
-          <div className="frame-9">
-            <p className="text-wrapper-15">Быстрый экспорт в PDF и DOCX</p>
-
-            <div className="checkmark">
-              <div className="group-4" />
-            </div>
-          </div>
-
-          <div className="frame-10">
-            <div className="text-wrapper-15">Без регистрации и звонков</div>
-
-            <div className="checkmark">
-              <div className="group-6" />
-            </div>
-          </div>
-
-          <Link className="link-3" to="/u1072u1085u1082u1077u1090u1072">
-            <div className="text-wrapper-16">Начать</div>
-          </Link>
+    <!-- Герой-секция -->
+    <section class="apple-hero">
+        <div class="apple-center-content">
+            <h2>Онлайн-сервис для Самозанятых, ИП и ООО. <br> Генерация документов, подсказки по регистрации <br> и правовые советы — в одном окне.</h2>
+            <p class="hero-subtitle">Создайте свой бизнес — просто и без юристов</p>
+            <a href="{{url_for('anketa')}}" class="apple-button large">Начать сейчас</a>
         </div>
+    </section>
 
-        <img
-          className="img"
-          alt="Rectangle"
-          src="https://c.animaapp.com/B7TbqYlz/img/rectangle-31.svg"
-        />
-
-        <img
-          className="img"
-          alt="Rectangle"
-          src="https://c.animaapp.com/B7TbqYlz/img/rectangle-30.svg"
-        />
-
-        <div className="group-7">
-          <div className="text-wrapper-17">Контакты</div>
-
-          <div className="text-wrapper-18">Анкета</div>
-
-          <div className="text-wrapper-19">Чат-бот</div>
+    <!-- Как работает сервис -->
+    <section id="features" class="apple-section">
+        <h2 class="apple-section-title">Как работает сервис</h2>  
+        <div class="apple-grid">
+            <div class="apple-card">
+                <div class="icon-circle">1</div>
+                <h3>Ответьте на пять <br> вопросов</h3>
+                <p>Уточним форму бизнеса, налоговую систему и цели.</p>
+            </div>
+            <div class="apple-card">
+                <div class="icon-circle">2</div>
+                <h3>Получите нужные документы</h3>
+                <p>Шаблоны в Word или PDF, <br> готовые к подаче.</p>
+            </div>
+            <div class="apple-card">
+                <div class="icon-circle">3</div>
+                <h3>Следуйте пошаговым рекомендациям</h3>
+                <p>От регистрации до первых клиентов</p>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- Для кого это -->
+     <selection id="advantage"> <h2>Для кого это</h2>
+     <div class="container">
+        <div class="column"><h3>Самозанятым</h3>
+        <p>Договоры акты справки</p></div>
+     
+        <div class="column"><h3>ИП</h3>
+        <p>УСН, заявления, чек-листы</p></div>
+        
+        <div class="column"><h3>ООО</h3>
+        <p>Устав, решения, протоколы</p></div>
     </div>
-  );
-};
+</selection>
+
+    <!-- Преимущества -->
+    <section id="advantages"> <h2>Преимущества</h2> <p> почему выбирают нас:</p> </div>
+        <div class="container 2"
+        <div class="column1">
+            <div class="column1">
+                <h3>Готовые шаблоны документов</h3>
+            </div>
+            <div class="column1">
+                <h3>Лёгкая анкета — вместо долгих форм</h3>
+            </div>
+            <div class="column1">
+                <h3>Быстрый экспорт в PDF и DOCX</h3>
+            </div>
+            <div class="column1">
+             <h3>Без регистрации и звонков</h3>
+        </div>
+    </section>
+
+    <!-- Секция CTA -->
+    <section class="apple-section">
+        <h2>Готовы начать?</h2>
+        <a href="{{url_for('anketa')}}" class="apple-button medium">Создать документ</a>
+    </section>
+
+    <!-- Футер -->
+    <footer class="apple-footer">
+        <div class="footer-content">
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 BusinessDock. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
