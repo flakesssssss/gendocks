@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory
+from bot import run_bot
 import os
 
 app = Flask(__name__)
@@ -34,4 +35,6 @@ def download_file(filename):
 
 
 if __name__ == '__main__':
+    loop = asyncio.get_event_loop()
+    loop.create_task(run_bot())  # Запускаем бота в фоне
     app.run(debug=True)
